@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKKA UNIVERSITY</title>
+    <link rel="icon" href="AU.jpg">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Send Student Feedback.css">
+    
+</head>
+<body>
+
+
+                   
+                        <div>
+                          <!-- <h1 >AKKA UNIVERSITY</h1> -->
+                   
+                        </div>
+              
+                        <header class="topnav">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" href="#"><img src="Akka.png" alt="AKKA UNIVERSITY" width="30" height="24" class="d-inline-block align-text-top">&ensp;AKKA UNIVERSITY</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a onclick="document.getElementById('id01').style.display='block'" class="nav-link active"style="width:auto;"  >Login</a>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Service
+                                          </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="dropdown-item">college Registration</a></li>
+                                            <li><a class="dropdown-item" onclick="document.getElementById('id03').style.display='block'"  style="width:auto;" class="dropdown-item">Student Registration</a></li>
+                                          </ul>
+                                        </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="">About</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="Contact Us.html">Contact Us</a>
+                                      </li>
+                                    </ul>
+
+                                  </div>
+                                </div>
+                              </nav>
+                        </header>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+</head>
+
+              <h2>Send Student Feedback:</h2><a class="container-fluid" id="AdminLogin" href="After Student Login.html">Logout</a>
+              <div class="container">
+                <form onsubmit="return validate()" action="" method="POST">
+                  <label for="subject">Feed Back</label>
+                  <textarea id="subject" name="subject" placeholder="Give Your Feed Back" style="height:200px"></textarea>
+                  <span id="Fname"></span>
+                  <input type="submit" value="Submit">
+                  <script src="Send Student Feedback.js"></script>
+                </form>
+           
+      </form>
+    </div>
+    </body>
+        </html>

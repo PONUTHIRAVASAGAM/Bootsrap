@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKKA UNIVERSITY</title>
+    <link rel="icon" href="AU.jpg">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Home.css">
+    
+</head>
+<body>
+
+
+                   
+                        <div>
+                          <!-- <h1 >AKKA UNIVERSITY</h1> -->
+                   
+                        </div>
+              
+                        <header class="topnav">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" href="#"><img src="Akka.png" alt="AKKA UNIVERSITY" width="30" height="24" class="d-inline-block align-text-top">&ensp;AKKA UNIVERSITY</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a onclick="document.getElementById('id01').style.display='block'" class="nav-link active"style="width:auto;"  >Login</a>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Service
+                                          </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="dropdown-item">college Registration</a></li>
+                                            <li><a class="dropdown-item" onclick="document.getElementById('id03').style.display='block'"  style="width:auto;" class="dropdown-item">Student Registration</a></li>
+                                          </ul>
+                                        </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="About.html">About</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="Contact Us.html">Contact Us</a>
+                                      </li>
+                                    </ul>
+
+                                  </div>
+                                </div>
+                              </nav>
+                        </header>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+</head>
+<body>
+
+
+
+<!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+
+<div id="id01" class="modal" class="container">
+  
+  <form onsubmit="return validate()" class="modal-content animate" action="" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Akka.png" alt="Avatar" class="avatar">
+    </div>
+
+    <!-- <div  class="radio-inline" class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+      <label class="form-check-label" for="exampleRadios1">
+        Admin
+      </label>
+    </div>
+    <div  class="radio-inline" class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        College
+      </label>
+    </div>
+    <div  class="radio-inline" class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+      <label class="form-check-label" for="exampleRadios3">
+        Student
+      </label>
+    </div> -->
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input id="UserName" class="Box" type="text" name="lname" placeholder="Enter Your Name" required>
+      <span id="UName"></span>
+      <br>
+      <label for="psw"><b>Password</b></label>
+                  <input id="Password" class="Box" type="Password" name="pname" placeholder="Enter Your Password" required><br><br>
+            <span id="PWord"></span>
+      <br>
+            <label>
+        <input type="checkbox"  name="remember"> Remember me
+      </label>
+    </div>
+
+    <button id="in" type="submit" class="btn btn-primary">Submit</button>&ensp;&ensp;&ensp;&ensp;
+    <button id="in" type="reset" class="btn btn-danger">Reset</button>  
+   <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal" class="container">
+  
+  <form onsubmit="return validate()" class="modal-content animate" action="" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Akka.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <legend> College Registration</legend>
+      <label for="cname"><b>College Name</b></label>
+      <input id="collegeName" class="Box" type="text" name="cname" placeholder="Enter Your College Name" required>
+      <span id="CName"></span>
+      <label for="email"><b> College Email Id</b></label>
+      <input id="collegeEmail" type="text" class="Box" placeholder="Enter College Email" name="email" required>
+      <span id="Email"></span>
+      <br>
+      <label for="pname"><b>Password</b></label>
+      <input id="Password" class="Box" type="password" name="pname" placeholder="Enter Your Password" required>
+      <span id="PWord"></span>
+      <br>
+      <label for="psw"><b>Repeate Password</b></label>
+                  <input id="RepeatePassword" class="Box" type="Password" name="rpname" placeholder="Confirm Your Password" required><br><br>
+            <span id="RPWord"></span>
+ 
+            <label>
+        <input type="checkbox"  name="remember"> Remember me
+      </label>
+    </div>
+
+    <button id="in" type="submit"  class="signupbtn">Signup</button>&ensp;&ensp;&ensp;&ensp;
+    <button id="in" type="reset" class="cancelbtn">Cancel</button>  <br> 
+  </div>
+  </form>
+</div>
+<div id="id03" class="modal" class="container">
+  
+  <form class="modal-content animate" action="" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Akka.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+    <legend>Student Registration</legend>
+      <label for="uname"><b>Student Name</b></label>
+      <input id="UserName" class="Box" type="text" name="lname" placeholder="Enter Your Name" required>
+      <span id="UName"></span>
+      <label for="email"><b> Student Email Id</b></label>
+      <input type="text" class="Box" placeholder="Enter Email" name="email" required>
+      <span id="UName"></span>
+      <br>
+      <label for="uname"><b>Password</b></label>
+      <input id="UserName" class="Box" type="password" name="lname" placeholder="Enter Your Name" required>
+      <span id="UName"></span>
+      <br>
+      <label for="psw"><b>Repeate Password</b></label>
+                  <input id="Password" class="Box" type="Password" name="pname" placeholder="Enter Your Password" required><br><br>
+            <span id="PWord"></span>
+ 
+            <label>
+        <input type="checkbox"  name="remember"> Remember me
+      </label>
+    </div>
+
+    <button id="in" type="submit" class="signupbtn">Signup</button>&ensp;&ensp;&ensp;&ensp;
+    <button id="in" type="reset" class="cancelbtn">Cancel</button>  
+  <br> 
+  </div>
+  </form>
+</div>
+</b>
+<img class=" image" src="Akka.png" class="rounded float-end" alt=" Akka University" width="250" height="250">
+                     
+<div id="Paragraph">
+<dt><b>AKKA UNIVERSITY : </b></dt>
+<dd> <b> Akka University </b> is a public state university located in Tamil Nadu, India.<br> The main campus is in Chennai.<br> It was originally established on 4 September 1978 and was named after C.N.<br> The University is now the affiliating authority for close to 550 engineering colleges in Tamil Nadu.</dd>
+</div>
+
+         
+    <script src="Home.js "></script>
+    <script src="College Registration.js"></script>
+
+    <Script src="./Assets/js/bootstrap.min.js"></Script>
+    <Script src="./Assets/js/Jquerry.min.js"></Script>
+
+
+
+
+   
+</body>
+</html>

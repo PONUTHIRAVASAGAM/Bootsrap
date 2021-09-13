@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKKA UNIVERSITY</title>
+    <link rel="icon" href="AU.jpg">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Faculty Management.css">
+    
+</head>
+<body>
+
+
+                   
+                        <div>
+                          <!-- <h1 >AKKA UNIVERSITY</h1> -->
+                   
+                        </div>
+              
+                        <header class="topnav">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" href="#"><img src="Akka.png" alt="AKKA UNIVERSITY" width="30" height="24" class="d-inline-block align-text-top">&ensp;AKKA UNIVERSITY</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a onclick="document.getElementById('id01').style.display='block'" class="nav-link active"style="width:auto;"  >Login</a>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Service
+                                          </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="dropdown-item">college Registration</a></li>
+                                            <li><a class="dropdown-item" onclick="document.getElementById('id03').style.display='block'"  style="width:auto;" class="dropdown-item">Student Registration</a></li>
+                                          </ul>
+                                        </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="">About</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="Contact Us.html">Contact Us</a>
+                                      </li>
+                                    </ul>
+
+                                  </div>
+                                </div>
+                              </nav>
+                        </header>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+</head>
+</head>
+<div class="container-fluid">
+    <h1 class="container-fluid"> Faculty Management</h1><a class="container-fluid" id="AdminLogin" href="After College Login.html">Back</a>
+    </div><br>
+    <div id="btnContainer">
+      <button class="btn" onclick="listView()"><i class="fa fa-th-large"></i> List</button> 
+      <button class="btn" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+    </div>
+    <div class="row">
+        <div class="column" style="background-color:#ffd4bfe1">
+            <a onclick="document.getElementById('id04').style.display='block'" class="nav-link active"style="width:auto;"><h2>Add Faculty</h2></a>
+        </div>
+        <div class="column" style="background-color:#ffd4bfb7">
+            <a onclick="document.getElementById('id05').style.display='block'" class="nav-link active"style="width:auto;"><h2>Update Faculty</h2></a>
+        </div>
+      </div>
+    </div>
+    <div id="id04" class="modal" class="container">
+      
+      <form onsubmit="return validate()" class="modal-content animate" action="" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="Akka.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <legend> Add Faculty</legend>
+          <label for="cname"><b>Faculty Name</b></label>
+          <input id="collegeName" class="Box" type="text" name="cname" placeholder="Enter Your College Name" required>
+          <span id="CName"></span>
+          <label for="email"><b> Qualification</b></label>
+          <input id="collegeEmail" type="text" class="Box" placeholder="Enter College Email" name="email" required>
+          <span id="Email"></span>
+          <br>
+          <label for="pname"><b>Experience</b></label>
+          <input id="Password" class="Box" type="text" name="pname" placeholder="Enter Your Password" required>
+          <span id="PWord"></span>
+          <br>
+          <label for="psw"><b>Skillset</b></label>
+                      <input id="RepeatePassword" class="Box" type="text" name="rpname" placeholder="Confirm Your Password" required><br><br>
+                <span id="RPWord"></span>
+        </div>
+    
+        <button id="in" type="submit"  class="signupbtn">Add</button>&ensp;&ensp;&ensp;&ensp;
+        <button id="in" type="reset" class="cancelbtn">Cancel</button>  <br> 
+      </div>
+      </form>
+    </div>
+</div>
+<div id="id05" class="modal" class="container">
+  
+    <form onsubmit="return validate()" class="modal-content animate" action="" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="Akka.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <legend> Update Faculty</legend>
+        <label for="cname"><b>Faculty Name</b></label>
+        <input id="collegeName" class="Box" type="text" name="cname" placeholder="Enter Your College Name" required>
+        <span id="CName"></span>
+        <label for="email"><b> Qualification</b></label>
+        <input id="collegeEmail" type="text" class="Box" placeholder="Enter College Email" name="email" required>
+        <span id="Email"></span>
+        <br>
+        <label for="pname"><b>Experience</b></label>
+        <input id="Password" class="Box" type="text" name="pname" placeholder="Enter Your Password" required>
+        <span id="PWord"></span>
+        <br>
+        <label for="psw"><b>Skillset</b></label>
+                    <input id="RepeatePassword" class="Box" type="text" name="rpname" placeholder="Confirm Your Password" required><br><br>
+              <span id="RPWord"></span>
+   
+              <label>
+          <input type="checkbox"  name="remember"> Remember me
+        </label>
+      </div>
+  
+      <button id="in" type="submit"  class="signupbtn">Update</button>&ensp;&ensp;&ensp;&ensp;
+      <button id="in" type="reset" class="cancelbtn">Cancel</button>  <br> 
+    </div>
+    </form>
+</div>
+    
+      <Script src="./Assets/js/bootstrap.min.js"></Script>
+      <Script src="./Assets/js/Jquerry.min.js"></Script>
+      <Script src="./After College Login.js"></Script>
+  
+      </body>
+    </html>
